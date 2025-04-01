@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Site1</title>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/index.js" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__logo">
+				<img src="images/logo.webp" alt="Company Logo" class="header__logo-img">
+			</div>
+			<nav class="header__nav nav">
+				<button class="nav__toggle">
+					<span class="nav__toggle-line"></span>
+				</button>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link active" data-section="hero">Home</a></li>
+					<li class="nav__item"><a href="#" class="nav__link" data-section="features">Services</a></li>
+					<li class="nav__item"><a href="#" class="nav__link" data-section="gallery">Gallery</a></li>
+					<li class="nav__item"><a href="#" class="nav__link" data-section="contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero" id="hero">
+			<div class="hero__container">
+				<div class="hero__content">
+					<h1 class="hero__title">Welcome to Our Company</h1>
+					<p class="hero__subtitle">We provide innovative solutions for your business</p>
+					<button class="hero__button button" data-modal="contact">Get Started</button>
+				</div>
+				<div class="hero__image">
+					<img src="images/windows.png" alt="Hero Image" class="hero__img">
+				</div>
+			</div>
+		</section>
+
+		<section class="features" id="features">
+			<div class="features__container">
+				<h2 class="features__title">Our Services</h2>
+				<div class="features__grid">
+					<div class="features__item">
+						<div class="features__icon">
+							<img src="images/decore.webp" alt="Fast Delivery" class="features__icon-img">
+						</div>
+						<h3 class="features__item-title">Fast Delivery</h3>
+						<p class="features__text">Quick and reliable service delivery</p>
+					</div>
+					<div class="features__item">
+						<div class="features__icon">
+							<img src="images/decore.webp" alt="Smart Solutions" class="features__icon-img">
+						</div>
+						<h3 class="features__item-title">Smart Solutions</h3>
+						<p class="features__text">Innovative approaches to problems</p>
+					</div>
+					<div class="features__item">
+						<div class="features__icon">
+							<img src="images/decore.webp" alt="Secure Service" class="features__icon-img">
+						</div>
+						<h3 class="features__item-title">Secure Service</h3>
+						<p class="features__text">Your security is our priority</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery" id="gallery">
+			<div class="gallery__container">
+				<h2 class="gallery__title">Our Work</h2>
+				<div class="gallery__grid">
+					<div class="gallery__item">
+						<img src="images/windows.png" alt="Work 1" class="gallery__img">
+						<div class="gallery__overlay">
+							<h3 class="gallery__item-title">Project 1</h3>
+							<p class="gallery__text">Click to view details</p>
+						</div>
+					</div>
+					<div class="gallery__item">
+						<img src="images/windows.png" alt="Work 2" class="gallery__img">
+						<div class="gallery__overlay">
+							<h3 class="gallery__item-title">Project 2</h3>
+							<p class="gallery__text">Click to view details</p>
+						</div>
+					</div>
+					<div class="gallery__item">
+						<img src="images/windows.png" alt="Work 3" class="gallery__img">
+						<div class="gallery__overlay">
+							<h3 class="gallery__item-title">Project 3</h3>
+							<p class="gallery__text">Click to view details</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="contact__container">
+				<h2 class="contact__title">Get in Touch</h2>
+				<form class="contact__form form" id="contactForm">
+					<div class="form__group">
+						<input type="text" class="form__input" placeholder="Your Name" required>
+						<span class="form__error"></span>
+					</div>
+					<div class="form__group">
+						<input type="email" class="form__input" placeholder="Your Email" required>
+						<span class="form__error"></span>
+					</div>
+					<div class="form__group">
+						<textarea class="form__textarea" placeholder="Your Message" required></textarea>
+						<span class="form__error"></span>
+					</div>
+					<button type="submit" class="form__button button">Send Message</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__content">
+				<div class="footer__logo">
+					<img src="images/logo.webp" alt="Company Logo" class="footer__logo-img">
+				</div>
+				<div class="footer__social social">
+					<a href="#" class="social__link">
+						<span class="social__icon">FB</span>
+					</a>
+					<a href="#" class="social__link">
+						<span class="social__icon">TW</span>
+					</a>
+					<a href="#" class="social__link">
+						<span class="social__icon">IN</span>
+					</a>
+				</div>
+			</div>
+			<p class="footer__copyright">© 2024 Company Name. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal" id="galleryModal">
+		<div class="modal__content">
+			<button class="modal__close">&times;</button>
+			<img src="" alt="" class="modal__img">
+			<h3 class="modal__title"></h3>
+			<p class="modal__text"></p>
+		</div>
+	</div>
+</body>
+
+</html>
