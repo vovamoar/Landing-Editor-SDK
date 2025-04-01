@@ -1,0 +1,8 @@
+User-agent: facebot
+Disallow: /image/
+Disallow: /system/
+Disallow: /admin/
+Disallow: /cache/
+Disallow: /catalog/
+Crawl-delay: 7
+Disallow: /storage/

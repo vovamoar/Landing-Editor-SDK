@@ -1,0 +1,5 @@
+User-agent: Sogou
+Disallow: /installation/
+Disallow: /administrator/
+Disallow: /components/
+Disallow: /modules/

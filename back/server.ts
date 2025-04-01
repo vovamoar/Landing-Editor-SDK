@@ -181,12 +181,52 @@ app.get('/preview/:siteName', async (req, res) => {
 
 		// Додаємо CSS та JS якщо вони існують
 		const cssPath = path.join(sitePath, 'css', 'styles.css')
+		const bootstrapPath = path.join(sitePath, 'css', 'bootstrap.min.css')
+		const materializePath = path.join(sitePath, 'css', 'materialize.min.css')
+		const tailwindPath = path.join(sitePath, 'css', 'tailwind.min.css')
+		const bulmaPath = path.join(sitePath, 'css', 'bulma.min.css')
+		const allPath = path.join(sitePath, 'css', 'all.min.css')
 		const jsPath = path.join(sitePath, 'js', 'index.js')
 
 		if (await fs.pathExists(cssPath)) {
 			html = html.replace(
 				'</head>',
 				`<link rel="stylesheet" href="/static/${siteName}/css/styles.css"></head>`
+			)
+		}
+
+		if (await fs.pathExists(bootstrapPath)) {
+			html = html.replace(
+				'</head>',
+				`<link rel="stylesheet" href="/static/${siteName}/css/bootstrap.min.css"></head>`
+			)
+		}
+
+		if (await fs.pathExists(materializePath)) {
+			html = html.replace(
+				'</head>',
+				`<link rel="stylesheet" href="/static/${siteName}/css/materialize.min.css"></head>`
+			)
+		}
+
+		if (await fs.pathExists(tailwindPath)) {
+			html = html.replace(
+				'</head>',
+				`<link rel="stylesheet" href="/static/${siteName}/css/tailwind.min.css"></head>`
+			)
+		}
+
+		if (await fs.pathExists(bulmaPath)) {
+			html = html.replace(
+				'</head>',
+				`<link rel="stylesheet" href="/static/${siteName}/css/bulma.min.css"></head>`
+			)
+		}
+
+		if (await fs.pathExists(allPath)) {
+			html = html.replace(
+				'</head>',
+				`<link rel="stylesheet" href="/static/${siteName}/css/all.min.css"></head>`
 			)
 		}
 

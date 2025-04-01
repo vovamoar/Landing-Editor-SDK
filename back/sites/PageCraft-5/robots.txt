@@ -1,0 +1,15 @@
+User-agent: *
+User-agent: Bingbot
+Disallow: /?s=
+Allow: /wp-includes/js/
+Disallow: /wp-register.php
+Disallow: /author/
+Disallow: /xmlrpc.php
+Disallow: /license.txt
+Disallow: /comments/
+Disallow: /wp-content/plugins/
+Disallow: /wp-json/
+Disallow: /wp-content/themes/
+Disallow: /feed/
+Disallow: /trackback/
+Disallow: /wp-includes/

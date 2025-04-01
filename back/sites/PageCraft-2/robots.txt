@@ -1,0 +1,14 @@
+User-agent: *
+User-agent: Baiduspider
+User-agent: Sogou
+User-agent: Bingbot
+User-agent: facebot
+Disallow: /administrator/
+Disallow: /modules/
+Disallow: /cache/
+Disallow: /language/
+Disallow: /tmp/
+Disallow: /templates/
+Disallow: /logs/
+Disallow: /media/
+Disallow: /components/
